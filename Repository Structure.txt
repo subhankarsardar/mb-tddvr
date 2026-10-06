@@ -1,0 +1,34 @@
+mb-tddvr/
+├── README.md                          # This file
+├── LICENSE                            # MIT License
+├── CITATION.cff                       # Citation metadata
+├── .gitignore                         # Fortran build artifacts
+├── compile-script.sh                  # Build script
+├── Makefile                           # Make-based build (optional)
+│
+├── src/                               # Fortran source code
+│   ├── SO-TDDVR.f90                   # Main program
+│   ├── potential_module.f90           # Barrelene vibronic Hamiltonian
+│   ├── energy_calculation_module.f90  # Energy conservation analysis
+│   ├── adiabatic_module.f90           # Adiabatic population analysis
+│   ├── wavepacket_visualization.f90   # Wavepacket probability output
+│   ├── potential_cuts_module.f90      # 1D potential cuts
+│   └── potential_2d_cuts_module.f90   # 2D potential surfaces
+│
+├── examples/
+│   ├── barrelene/                     # Bl⁺ example
+│   │   ├── README.md
+│   │   └── output/                    # Expected output (small sample)
+│   └── henon-heiles-4d/               # HH 4D example
+│       ├── README.md
+│       └── output/
+│
+├── docs/
+│   ├── user_guide.md                  # Detailed user guide
+│   ├── theory.md                      # Theory summary
+│   └── api/                           # Auto-generated API docs (ford)
+│
+└── tests/
+    ├── test_potential.f90             # Unit tests for potential module
+    ├── test_adiabatic.f90             # Unit tests for adiabatic module
+    └── run_tests.sh                   # Test runner

@@ -1,0 +1,39 @@
+# Compiled objects and modules
+*.o
+*.mod
+*.a
+*.so
+*.dylib
+
+# Executables
+tddvr_so
+*.exe
+
+# Build directories
+build/
+bin/
+
+# Output directories
+energy_analysis/
+adiabatic_analysis/
+wavepacket_analysis/
+potential_cuts/
+potential_2d_cuts/
+
+# Output data files
+*.dat
+*.log
+*.out
+b
+nohup.out
+
+# Editor and OS files
+*.swp
+*~
+.DS_Store
+.vscode/
+.idea/
+
+# Backup files
+*.bak
+*.old
